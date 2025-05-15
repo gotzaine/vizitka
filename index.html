@@ -1,67 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Привет, я Варя</title>
-    <style>
-        body {
-            background-color: #1e1e1e;
-            color: #e0dcd1;
-            font-family: Georgia, serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            text-align: center;
-            padding: 60px 20px 20px;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #e8c27b;
-        }
-        p {
-            font-size: 1.2em;
-            max-width: 600px;
-            margin: 20px auto;
-            line-height: 1.6;
-        }
-        .contacts {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .contacts a {
-            color: #e8c27b;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 1.2em;
-        }
-        .photos {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .photos img {
-            max-width: 300px;
-            margin: 10px;
-            border: 2px solid #e8c27b;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя визитка — Варя</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #0e0e0e;
+      color: #ffffff;
+    }
+
+    section {
+      padding: 80px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #f5c97f;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .gallery img {
+      width: 220px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .contacts a {
+      color: #f5c97f;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Привет, я Варя</h1>
-        <p>Я люблю свою собаку Моню, обожаю пить зелёный чай, рисовать, готовить и танцевать. Иногда я пишу стихи и люблю запечатлевать красивые кадры. Добро пожаловать в мой маленький мир!</p>
-    </header>
 
-    <div class="photos">
-        <img src="images/foto1.jpg" alt="Моё фото 1">
-        <img src="images/foto2.jpg" alt="Моё фото 2">
-    </div>
+  <section class="hero">
+    <h1>Привет, я Варя</h1>
+    <p>Иногда я пишу стихи. Обожаю пить зелёный чай, готовить, танцевать и гулять с моей собакой Моней. Люблю запечатлевать красивые кадры и рисовать.</p>
+  </section>
 
-    <div class="contacts">
-        <a href="https://www.instagram.com/gotzzaine" target="_blank">Instagram</a>
-        <a href="https://t.me/varvaranaogorode" target="_blank">Telegram</a>
-    </div>
+  <section class="gallery">
+    <h2>Мои фотографии</h2>
+    <img src="images/photo1.jpg" alt="Фото 1">
+    <img src="images/photo2.jpg" alt="Фото 2">
+  </section>
+
+  <section class="poems">
+    <h2>Мои стихи</h2>
+    <p>Ты пахнешь как забытый мною страх…<br>
+    Я чувствую огонь в своих руках…</p>
+  </section>
+
+  <section class="contacts">
+    <h2>Контакты</h2>
+    <a href="https://www.instagram.com/gotzzaine" target="_blank">Instagram</a>
+    <a href="https://t.me/varvaranaogorode" target="_blank">Telegram</a>
+  </section>
+
 </body>
 </html>
